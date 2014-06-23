@@ -1,0 +1,4 @@
+{
+"name": "artGallery",
+"files": [ { "filters": ["*.py", "*.html"] } ]
+}
