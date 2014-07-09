@@ -10,8 +10,10 @@ urlpatterns = patterns('',
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-    # Uncomment the next line to enable the admin:
+    # Admin
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^ContactsManagement/$', 'ContactsManagement.views.index'),
-    url(r'^ContactsManagement/getAllContacts$', 'Contacts.views.getAllContacts'),
+    # ContactsManagement index
+    url(r'^contactsmanagement/$', 'ContactsManagement.views.index'),
+    # ContactsManagement Get contacts
+    url(r'^contactsmanagement/getallcontacts$', 'ContactsManagement.views.getAllContacts'),
 )
